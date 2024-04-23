@@ -1,0 +1,29 @@
+:root {
+    --b-title-load: 120px;
+    --l-title-load: 30px;
+    --bg-color-f: #F9F3F0;
+    --bg-color-s: #76412C;
+    --color-black: #000;
+    --font: "Arimo", sans-serif;
+    --logo-title: 21px;
+    --logo-title-p: 8px;
+    --p: 14px;
+    --m-navbar: 40px;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+
+body {
+    height: auto;
+    background: var(--bg-color-f);
+    display: inherit;
+
+}
