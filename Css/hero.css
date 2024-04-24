@@ -38,3 +38,38 @@
     width: 325px;
     height: 189px;
 }
+
+.p-hero-div-bt-e {
+    grid-row: 4;
+}
+
+.p-hero-div-bt,
+.p-hero-div-lt,
+.p-hero-div-llt,
+.anim-img-wrapper {
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.hero-text,
+.img-hero {
+    transform: translateY(100%);
+}
+
+.p-hero-div-lt-e {
+    grid-row: 5;
+    grid-column: 1;
+    justify-self: flex-end;
+}
+
+
+
+.p-hero-div-pic {
+    grid-row: 6;
+    grid-column: 2;
+}
+
+.p-hero-div-llt-e {
+    grid-row: 7;
+    grid-column: 3;
+}
