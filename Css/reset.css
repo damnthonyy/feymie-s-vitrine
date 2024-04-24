@@ -1,6 +1,7 @@
 :root {
     --b-title-load: 120px;
     --l-title-load: 30px;
+    --title-hero: 88px;
     --bg-color-f: #F9F3F0;
     --bg-color-s: #76412C;
     --color-black: #000;
@@ -26,8 +27,4 @@ body {
     background: var(--bg-color-f);
     display: inherit;
 
-}
-
-.about {
-    height: 200vh;
 }
