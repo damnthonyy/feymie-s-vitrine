@@ -1,6 +1,6 @@
 #navbar {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-gap: 20px;
     align-items: center;
     padding: 20px 45px;
@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: fit-content;
     padding-left: var(--m-navbar);
 }
 
