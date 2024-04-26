@@ -1,9 +1,105 @@
 @media(700px<=width<=1200px) {
     #navbar {
         padding: 10px 10px;
+        z-index: 999;
+        background-color: #F9F3F0;
     }
 
     .logo {
         padding: 0;
+    }
+
+    .logo>.logo-title {
+        font-size: var(--size-logo-mobile);
+    }
+
+    & .nav-link {
+        background-color: var(--bg-color-s);
+        top: -100vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 0px;
+        transition: ease-in-out 1s;
+        margin-top: initial;
+    }
+
+    .nav-link.isActive {
+        background-color: var(--bg-color-s);
+        top: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        margin-top: initial;
+    }
+
+    .nav-link-wrapper {
+        justify-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        gap: 70px;
+    }
+
+    .anim-link-wrapper {
+        overflow: visible;
+    }
+}
+
+@media(320px<=width<=700px) {
+    #navbar {
+        padding: 10px 10px;
+        z-index: 999;
+        background-color: var(--bg-color-f);
+
+        & .nav-link {
+            background-color: var(--bg-color-s);
+            top: -100vh;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 0px;
+            transition: ease-in-out 1s;
+            margin-top: initial;
+        }
+
+        .nav-link.isActive {
+            background-color: var(--bg-color-s);
+            top: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            margin-top: initial;
+        }
+
+        .nav-link-wrapper {
+            justify-self: flex-start;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            gap: 70px;
+        }
+
+        .anim-link-wrapper {
+            overflow: visible;
+        }
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    .logo>.logo-title {
+        font-size: var(--size-logo-mobile);
     }
 }

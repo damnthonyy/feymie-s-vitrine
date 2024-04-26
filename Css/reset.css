@@ -11,11 +11,16 @@
     --logo-title-p: 8px;
     --p: 14px;
     --m-navbar: 40px;
+    --size-logo-mobile: 16px;
 
 
     /* tablette*/
     --title-hero-tab: 60px;
     --tag-style: 10px;
+
+    /* mobile*/
+    --title-hero-mobile: 21px;
+    --tag-style-mobile: 5px;
 }
 
 * {
