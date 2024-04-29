@@ -6,6 +6,8 @@
     padding: 20px 45px;
     position: fixed;
     width: 100vw;
+    z-index: 999;
+    background-color: #F9F3F0;
     top: 0;
     left: 0;
     right: 0;
