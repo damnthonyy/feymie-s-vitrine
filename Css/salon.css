@@ -57,7 +57,7 @@
 .gallery-wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 20%);
+    grid-template-rows: repeat(30, 200px);
     /* grid-row-gap: 5px;
     grid-column-gap: 5px; */
 }
@@ -67,8 +67,6 @@
     flex-direction: column;
     justify-content: flex-start;
     width: auto;
-    grid-column: 5 / span 4;
-    grid-row: 1 / span 5;
 }
 
 .id {
@@ -82,20 +80,18 @@
     /* 28px */
 }
 
-.img-gallery {
+/* .img-gallery {
     position: relative;
     object-fit: cover;
     overflow: hidden;
     width: auto;
     height: 500px;
-    /*  background-color: grey; */
+     background-color: grey;
     border-radius: 5px;
 }
-
+ */
 .img-text-explain-salon {
-    grid-row: 4;
-    grid-column: 1 / span 5;
-    /* display: flex; */
+    display: flex;
     width: auto;
     padding: 40px 10px;
     gap: 10px;
@@ -116,14 +112,17 @@
 
 }
 
-.img-gallery-content:nth-child(1) {
-    grid-column: 5 / span 4;
-    grid-row: 1 / span 5;
+div.img-gallery-content:nth-of-type(1) {
+    grid-column: 6 / span 4;
+    grid-row: 1/ span 3;
     overflow: hidden;
+    height: fit-content;
+    border-radius: 5px;
 }
 
 .video-gallery {
     position: absolute;
+    object-fit: cover;
     top: 0;
     left: 0;
     width: 100%;
@@ -132,36 +131,150 @@
 }
 
 .img-gallery-1 {
-    position: absolute;
+    position: relative;
+    object-fit: cover;
     top: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: 500px;
 }
 
-.img-gallery-content:nth-child(2) {
-    grid-column: 8 / span 3;
+.img-gallery-2 {
+    position: relative;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 400px;
+}
+
+.img-gallery-3 {
+    position: relative;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 400px;
+}
+
+.img-gallery-4 {
+    position: relative;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 600px;
+}
+
+.img-gallery-5 {
+    position: relative;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 372px;
+}
+
+div.img-gallery-content:nth-of-type(2) {
+    grid-column: 9 / span 3;
     grid-row: 3 / span 5;
     overflow: hidden;
+    height: fit-content;
+
+    border-radius: 5px;
 }
 
-.img-gallery-content:nth-child(3) {
-    grid-column: 8 / span 3;
-    grid-row: 3 / span 5;
+div.img-gallery-content:nth-of-type(6) {
+    grid-column: 3 / span 3;
+    grid-row: 6 / span 3;
+    overflow: hidden;
+    height: fit-content;
+    border-radius: 5px;
+
+}
+
+div.img-gallery-content:nth-of-type(3) {
+    grid-column: 11 / span 3;
+    grid-row: 6/ span 1;
+    height: fit-content;
+    border-radius: 5px;
 }
 
 
 
-.img-text-explain-salon:nth-child(3) {
-    grid-row: 4;
-    grid-column: 1 / span 5;
+div.img-text-explain-salon:nth-of-type(4) {
+    grid-row: 3;
+    grid-column: 2 / span 6;
+    height: fit-content;
+    border-radius: 5px;
 
 
 }
 
-.img-text-explain-salon:nth-child(4) {
+div.img-text-explain-salon:nth-of-type(5) {
+    grid-column: 5 / span 6;
+    grid-row: 5;
+    padding: 20px 20px;
+    height: fit-content;
+
+
+}
+
+div.img-text-explain-salon:nth-of-type(7) {
+    grid-column: 5 / span 6;
+    grid-row: 8/ span 1;
+    padding: 30px 30px;
+    height: fit-content;
+
+    border-radius: 5px;
+}
+
+div.img-gallery-content:nth-of-type(8) {
     grid-column: 4 / span 5;
-    grid-row: 6;
-    padding: 10px 10px;
+    grid-row: 10/ span 3;
+    height: fit-content;
 
+    border-radius: 5px;
+}
+
+div.img-gallery-content:nth-of-type(9) {
+    grid-column: -1 / span 4;
+    grid-row: 10/ span 3;
+    height: fit-content;
+
+    border-radius: 5px;
+}
+
+.btn-play-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    & .play-video {
+        display: inline-flex;
+        padding: 6px 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        background-color: var(--color-white);
+        color: var(--bg-color-s);
+        font-family: var(--font);
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 200%;
+        /* 20px */
+    }
+
+    .durée-video {
+        color: var(--color-black);
+
+        font-family: var(--font);
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 200%;
+        /* 20px */
+    }
 }
