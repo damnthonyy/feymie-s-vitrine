@@ -14,7 +14,7 @@
     }
 
     & .nav-link {
-        background-color: var(--bg-color-s);
+        background-color: var(--bg-color-f);
         top: -100vh;
         position: absolute;
         left: 0;
@@ -27,7 +27,7 @@
     }
 
     .nav-link.isActive {
-        background-color: var(--bg-color-s);
+        background-color: var(--bg-color-f);
         top: 0;
         position: absolute;
         left: 0;
@@ -58,7 +58,7 @@
         background-color: var(--bg-color-f);
 
         & .nav-link {
-            background-color: var(--bg-color-s);
+            background-color: var(--bg-color-f);
             top: -100vh;
             position: absolute;
             left: 0;
@@ -70,8 +70,28 @@
             margin-top: initial;
         }
 
+        .link {
+            font-family: var(--font);
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2.6px;
+            text-transform: uppercase;
+            color: var(--color-black);
+        }
+
+        .logo {
+            padding: 0;
+        }
+
+        .logo>.logo-title {
+            font-size: var(--size-logo-mobile);
+        }
+
+
         .nav-link.isActive {
-            background-color: var(--bg-color-s);
+            background-color: var(--bg-color-f);
             top: 0;
             position: absolute;
             left: 0;
@@ -87,7 +107,7 @@
             display: flex;
             flex-direction: column;
             margin: 20px;
-            gap: 70px;
+            gap: 30px;
         }
 
         .anim-link-wrapper {
@@ -95,11 +115,5 @@
         }
     }
 
-    .logo {
-        padding: 0;
-    }
 
-    .logo>.logo-title {
-        font-size: var(--size-logo-mobile);
-    }
 }

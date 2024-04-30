@@ -56,17 +56,23 @@
 @media(320px<=width<=700px) {
     #hero {
         padding: 50px 10px;
-        height: fit-content;
+        height: 100vh;
     }
 
     .hero-wrapper {
-        /*  grid-template-columns: repeat(16, minmax(0, 1fr));
-        grid-template-rows: repeat(7, minmax(0, 50px)); */
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 40px;
+        padding-top: 20vh;
+        gap: 1rem;
     }
+
+    .tag-position-1 {
+        top: 20vh;
+        left: 2vw;
+        position: absolute;
+    }
+
 
     .title-hero {
         font-size: var(--title-hero-mobile);
@@ -132,7 +138,7 @@
     /*  font-size: var(--tag-style-mobile);
     grid-column: 2 / 10; */
 
-    top: 50vh;
+    top: 70vh;
     left: 2vw;
     position: absolute;
 }
